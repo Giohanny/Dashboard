@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Osinergmin eGog</title>
+    <link href="../../modules/core/common/img/favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+
+    <!-- VENDORS -->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/jscrollpane/style/jquery.jscrollpane.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/ladda/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/summernote/dist/summernote.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/ionrangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/datatables/media/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/c3/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/jquery-steps/demo/css/jquery.steps.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/dropify/dist/css/dropify.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-linearicons/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-icomoon/style.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlaudioplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="../../vendors/cleanhtmlvideoplayer/src/player.css">
+    <script src="../../vendors/jquery/dist/jquery.min.js"></script>
+    <script src="../../vendors/tether/dist/js/tether.min.js"></script>
+    <script src="../../vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="../../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../../vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="../../vendors/jscrollpane/script/jquery.jscrollpane.min.js"></script>
+    <script src="../../vendors/spin.js/spin.js"></script>
+    <script src="../../vendors/ladda/dist/ladda.min.js"></script>
+    <script src="../../vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="../../vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="../../vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+    <script src="../../vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+    <script src="../../vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="../../vendors/autosize/dist/autosize.min.js"></script>
+    <script src="../../vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+    <script src="../../vendors/moment/min/moment.min.js"></script>
+    <script src="../../vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="../../vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../../vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+    <script src="../../vendors/summernote/dist/summernote.min.js"></script>
+    <script src="../../vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="../../vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="../../vendors/nestable/jquery.nestable.js"></script>
+    <script src="../../vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../../vendors/datatables/media/js/dataTables.bootstrap4.js"></script>
+    <script src="../../vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+    <script src="../../vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="../../vendors/editable-table/mindmup-editabletable.js"></script>
+    <script src="../../vendors/d3/d3.min.js"></script>
+    <script src="../../vendors/c3/c3.min.js"></script>
+    <script src="../../vendors/chartist/dist/chartist.min.js"></script>
+    <script src="../../vendors/peity/jquery.peity.min.js"></script>
+    <script src="../../vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="../../vendors/jquery-countTo/jquery.countTo.js"></script>
+    <script src="../../vendors/nprogress/nprogress.js"></script>
+    <script src="../../vendors/jquery-steps/build/jquery.steps.min.js"></script>
+    <script src="../../vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="../../vendors/dropify/dist/js/dropify.min.js"></script>
+    <script src="../../vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+    <script src="../../vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
+
+    <!-- CLEAN UI ADMIN TEMPLATE MODULES-->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="../../modules/core/common/core.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/vendors/common/vendors.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/layouts/common/layouts-pack.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/themes/common/themes.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/menu-left/common/menu-left.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/menu-right/common/menu-right.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/top-bar/common/top-bar.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/footer/common/footer.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/pages/common/pages.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/ecommerce/common/ecommerce.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="../../modules/apps/common/apps.cleanui.css">
+    <script src="../../modules/menu-left/common/menu-left.cleanui.js"></script>
+    <script src="../../modules/menu-right/common/menu-right.cleanui.js"></script>
+</head>
+<body class="cat__config--vertical cat__menu-left--colorful">
+<div class="cat__menu-right">
+    <div class="cat__menu-right__inner">
+        <div class="cat__menu-right__header">
+            <span class="fa fa-times pull-right cat__menu-right__action--menu-toggle"><!-- --></span>
+            Theme Settings
+        </div>
+        <div class="cat__menu-right__content">
+            <div class="cat__menu-right__descr">
+                This module "block-menu-right" gives possibility to construct custom blocks with any widgets, components and elements inside, like this theme settings
+            </div>
+            <div class="cat__menu-right__label">
+                Theme Style
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="" autocomplete="off"> Dark
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--light" autocomplete="off"> Light
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--green" autocomplete="off"> Green
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--blue" autocomplete="off"> Blue
+                        </label>
+                    </div>
+                </div>
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--red" autocomplete="off"> Red
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-theme" value="cat__theme--orange" autocomplete="off"> Orange
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Boxed Layout
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-boxed" value="cat__config--boxed" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-boxed" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Compact Menu
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-boxed" value="cat__config--compact" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-boxed" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Fixed Top Bar
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-topbar" value="" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-topbar" value="cat__config--unfixed" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Super Clean Mode
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-superclean" value="cat__config--superclean" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-superclean" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Colorful Menu
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-colorful" value="cat__menu-left--colorful" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-colorful" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Menu Shadow
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-shadow" value="cat__config--shadow" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-shadow" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="cat__menu-right__label">
+                Squared Corners
+            </div>
+            <div class="cat__menu-right__setting cat__menu-right--example-option">
+                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-corners" value="cat__config--squared-corners" autocomplete="off"> On
+                        </label>
+                    </div>
+                    <div class="btn-group">
+                        <label class="btn btn-default">
+                            <input type="radio" name="options-corners" value="" autocomplete="off"> Off
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="cat__menu-left">
+    <div class="cat__menu-left__lock cat__menu-left__action--menu-toggle">
+        <div class="cat__menu-left__pin-button">
+            <div><!-- --></div>
+        </div>
+    </div>
+    <div class="cat__menu-left__logo">
+        <a href="dashboards-alpha.html">
+            <img src="../../modules/dummy-assets/common/img/logo_osinerg.png" />
+        </a>
+    </div>
+    <div class="cat__menu-left__inner">
+        <ul class="cat__menu-left__list cat__menu-left__list--root">
+
+            <li class="cat__menu-left__divider"><!-- --></li>
+            <li class="cat__menu-left__item">
+                <a href="dashboards-alpha.html">
+                    <span class="cat__menu-left__icon icmn-home"></span>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="cat__menu-left__item cat__menu-left__submenu">
+                <a href="javascript: void(0);">
+                    <span class="cat__menu-left__icon icmn-stats-bars"></span>
+                    Indicadores
+                </a>
+                <ul class="cat__menu-left__list">>
+                    </li>
+                    <li  class="cat__menu-left__item">
+                        <a href="charts-chartjs.html">
+                            <span class="cat__menu-left__icon">CON</span>
+                            Concesionarias
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+</nav>
+<div class="cat__top-bar">
+    <!-- left aligned items -->
+    <div class="cat__top-bar__left">
+        <div class="cat__top-bar__logo">
+            <a href="dashboards-alpha.html">
+                <img src="../../modules/dummy-assets/common/img/logo-osin-azul.png" />
+            </a>
+        </div>
+        <div class="cat__top-bar__item hidden-lg-down">
+            <div class="cat__top-bar__search">
+                <i class="icmn-search"><!-- --></i>
+                <input type="text" placeholder="Buscar..." />
+            </div>
+        </div>
+    </div>
+    <!-- right aligned items -->
+        <div class="cat__top-bar__right">
+        <div class="cat__top-bar__item hidden-sm-down">
+            <a href="javascript:void(0)" class="btn btn-sm btn-default btn-rounded">Activo</a>
+        </div>
+        <div class="cat__top-bar__item hidden-sm-down">
+            <div class="dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <i class="menu-notification-icon icmn-home"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+
+                    <div class="cat__top-bar__activity">
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-star-full"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">ahora</span>
+                                    <a href="javascript: void(0);">Nuevo mensaje: <span class="badge badge-danger">Nuevo</span></a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    Informe Contugas
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-stack"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">hace 24 min</span>
+                                    <a href="javascript: void(0);">Próximamente: <span class="badge badge-default">Balón de Gas</span></a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    Informe ejecutivo Cálidda
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-list"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">hace 30 min</span>
+                                    <a href="javascript: void(0);">Nuevo mensaje</a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    De: <a href="javascript: void(0);">Kuntur</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-home"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">hace 35 min</span>
+                                    <a href="javascript: void(0);">Evento hoy: <span class="badge badge-primary">Nuevo</span></a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    Reunión Cálidda
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-loop"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">la semana pasada</span>
+                                    <a href="javascript: void(0);">Primario: <span class="badge badge-warning">Evaluar</span></a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    Pluspetrol
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat__top-bar__activity__item">
+                            <i class="cat__top-bar__activity__icon icmn-cog cat__core__spin-delayed--pseudo-selector"></i>
+                            <div class="cat__top-bar__activity__inner">
+                                <div class="cat__top-bar__activity__title">
+                                    <span class="pull-right">la semana pasada</span>
+                                    <a href="javascript: void(0);">Nuevos mensajes</a>
+                                </div>
+                                <div class="cat__top-bar__activity__descr">
+                                    De: <a href="javascript: void(0);">Kuntur</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
+        <div class="cat__top-bar__item">
+            <div class="dropdown cat__top-bar__avatar-dropdown">
+                <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <span class="cat__top-bar__avatar" href="javascript:void(0);">
+                        <img src="../../modules/dummy-assets/common/img/avatars/perfil.jpg" />
+                    </span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> Perfil</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Opciones</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i> Salir</a>
+                </ul>
+            </div>
+        </div>
+        <div class="cat__top-bar__item">
+            <div class="cat__top-bar__menu-button cat__menu-right__action--menu-toggle">
+                <i class="fa fa-bars"><!-- --></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cat__content">
+<!-- START: charts/chartjs -->
+<section class="card">
+    <div class="card-header">
+        <span class="cat__core__title">
+            <strong>Reporte Concesionarias</strong>
+        </span>
+    </div>
+    <div class="card-block">
+        <div class="row">
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Suspensión del servicio</strong></h5>
+                <p>Indicador: Horas suspendidas del servicio en los últimos 6 meses</p>                 
+                <div class="mb-5">
+                    <!-- Line Chart -->
+                    <canvas id="chart-line" width="400" height="200"></canvas>
+                    <!-- End Line Chart -->
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <h5 class="text-black"><strong>Nuevas instalaciones</strong></h5>
+                <p>Indicador: Cantidad de nuevos clientes en los últimos 6 meses</p>                 
+                <div class="mb-5">
+                    <!-- Bar Chart -->
+                    <canvas id="chart-bar" width="400" height="200"></canvas>
+                    <!-- End Bar Chart -->
+                </div>
+            </div>
+        </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5 class="text-black"><strong>Reclamos y quejas</strong></h5>
+                    <p>Indicador: Porcentaje de Reclamos en los últimos 6 meses</p>
+                    <div class="mb-5">
+                        <!-- Radar Chart -->
+                        <div class="chart-donut-chart"></div>
+                        <!-- End Radar Chart -->
+                    </div>  
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="text-black"><strong>Estado del servicio</strong></h5>
+                    <p>Indicador: Cantidad de medidores en buen, regular y mal estado</p>
+                    <div class="mb-5">
+                        <!-- Radar Chart -->
+                        <div class="chart-combination"></div>
+                        <!-- End Radar Chart -->
+                    </div>  
+                </div>
+            </div>
+    </div>
+</section>
+<!-- END: charts/chartjs -->
+
+<!-- START: page scripts -->
+<script>
+    $(function () {
+        var colors = {
+            _primary: "rgba(142,164,174,0.8)",
+            _default: "rgba(71,173,185,1)",
+            _success: '#46be8a',
+            _danger: '#fb434a',
+            _ambar: "rgba(230,215,30,1)",
+            _calidda: "rgba(71,173,185,1)",
+            _contugas: "rgba(232, 118, 107,1)",
+            _kuntur: "rgba(70, 190, 138, 1)",
+            _pluspetrol: "rgba(196, 121, 181, 1)"
+        };
+
+         c3.generate({
+            bindto: ".chart-combination",
+            data: {
+                columns: [
+                    ["Hogar", 130, 120, 150, 140, 180, 150 ],
+                    ["Industria", 100, 80, 90, 70, 30, 70],
+                    ["Bueno", 200, 200, 160, 100, 150, 250],
+                    ["Regular", 100, 130, 90, 240, 130, 220],
+                    ["Malo", 50, 70, 20, 50, 60, 120]
+                ],
+                type: "bar",
+                types: {
+                    Bueno: "spline",
+                    Regular: "spline",
+                    Malo: "spline"
+                },
+                groups: [
+                    ["Hogar", "Industria"]
+                ]
+            },
+            axis:{
+                x:{
+                    type:'category',
+                    categories:["Junio","Julio", "Agosto", "Setiembre", "Octubre", "Noviembre"]
+                }
+            },
+            color: {
+                pattern: [colors._primary, colors._default, colors._success, colors._ambar, colors._danger]
+            },
+            grid: {
+                x: {
+                    show: !1
+                },
+                y: {
+                    show: !0
+                }
+            }
+        });
+
+            c3.generate({
+            bindto: '.chart-donut-chart',
+            data: {
+                columns: [
+                    ['Cálidda', 130],
+                    ['Contugas', 20],
+                    ['Kuntur', 50],
+                    ['Pluspetrol', 40]
+                ],
+                type : 'donut'
+            },
+            color: {
+                pattern: [colors._calidda, colors._contugas, colors._kuntur, colors._pluspetrol]
+            },
+            donut: {
+               
+            }
+        });
+
+        // LINE CHART
+        var lineCtx = document.getElementById('chart-line').getContext('2d');
+
+        var dataLine = {
+            labels: ["Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre"],
+            datasets: [
+                {
+                    label: "Cálidda",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(71,173,185,1)",
+                    borderColor: "rgba(71,173,185,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(71,173,185,1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(71,173,185,1)",
+                    pointHoverBorderColor: "rgba(71,173,185,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 5,
+                    pointHitRadius: 10,
+                    data: [59, 80, 81, 66, 55, 70],
+                    spanGaps: false
+                },
+                {
+                    label: "Contugas",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(232, 118, 107,1)",
+                    borderColor: "rgba(232, 118, 107,1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(232, 118, 107, 1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(232, 118, 107, 1)",
+                    pointHoverBorderColor: "rgba(232, 118, 107,1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 5,
+                    pointHitRadius: 10,
+                    data: [99, 30, 81, 86, 35, 20],
+                    spanGaps: false
+                },
+                {
+                    label: "Kuntur",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(70, 190, 138, 1)",
+                    borderColor: "rgba(70, 190, 138, 1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(70, 190, 138, 1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(70, 190, 138, 1)",
+                    pointHoverBorderColor: "rgba(70, 190, 138, 1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 5,
+                    pointHitRadius: 10,
+                    data: [49, 30, 21, 36, 65, 50],
+                    spanGaps: false
+                },
+                {
+                    label: "Pluspetrol",
+                    fill: false,
+                    lineTension: 0.1,
+                    backgroundColor: "rgba(196, 121, 181, 1)",
+                    borderColor: "rgba(196, 121, 181, 1)",
+                    borderCapStyle: 'butt',
+                    borderDash: [],
+                    borderDashOffset: 0.0,
+                    borderJoinStyle: 'miter',
+                    pointBorderColor: "rgba(196, 121, 181, 1)",
+                    pointBackgroundColor: "#fff",
+                    pointBorderWidth: 1,
+                    pointHoverRadius: 5,
+                    pointHoverBackgroundColor: "rgba(196, 121, 181, 1)",
+                    pointHoverBorderColor: "rgba(196, 121, 181, 1)",
+                    pointHoverBorderWidth: 2,
+                    pointRadius: 5,
+                    pointHitRadius: 10,
+                    data: [69, 70, 51, 66, 25, 90],
+                    spanGaps: false
+                }
+            ]
+
+        };
+
+        new Chart(lineCtx, {
+            type: 'line',
+            data: dataLine,
+            options: {
+                scales: {
+                    xAxes: [{
+                        display: true
+                    }]
+                }
+            }
+        });
+
+        // BAR CHART
+        var barCtx = document.getElementById('chart-bar').getContext('2d');
+
+        var dataBar = {
+            labels: ["Junio", "Julio", "Agosto", "Setiembre", "Octubre", "Noviembre"],
+            datasets: [
+                {
+                    label: "Cálidda",
+                    backgroundColor:"rgba(71,173,185,1)",
+                    borderColor:"rgba(71,173,185,1)",
+                    borderWidth: 1,
+                    data: [35, 59, 40, 51, 56, 55]
+                },
+                {
+                    label: "Contugas",
+                    backgroundColor:"rgba(232, 118, 107,1)",
+                    borderColor:"rgba(232, 118, 107,1)",
+                    borderWidth: 1,
+                    data: [65, 29, 30, 41, 56, 55]
+                },
+                {
+                    label: "Kuntur",
+                    backgroundColor:"rgba(70, 190, 138, 1)",
+                    borderColor:"rgba(70, 190, 138, 1)",
+                    borderWidth: 1,
+                    data: [25, 19, 23, 21, 56, 15]
+                },
+                {
+                    label: "Pluspetrol  ",
+                    backgroundColor:"rgba(196, 121, 181, 1)",
+                    borderColor:"rgba(196, 121, 181, 1)",
+                    borderWidth: 1,
+                    data: [35, 39, 33, 21, 56, 15]
+                }
+            ]
+        };
+
+        new Chart(barCtx, {
+            type: "bar",
+            data: dataBar,
+            options: {
+                scales: {
+                    xAxes: [{
+                        stacked: true
+                    }],
+                    yAxes: [{
+                        stacked: true
+                    }]
+                }
+            }
+        });
+
+        // RADAR CHART
+
+
+        // POLAR CHART
+
+
+        // PIE CHART
+       
+        // DOUGHTNUT CHART
+        var doughnutCtx = document.getElementById('chart-doughnut').getContext('2d');
+
+        var chartDoughnut = {
+            labels: [
+                "Cálidda",
+                "Contugas",
+                "Kuntur",
+                "Pluspetrol"
+            ],
+            datasets: [
+                {
+                    data: [300, 50, 100, 40],
+                    backgroundColor: [
+                        "rgba(71,173,185,1)",
+                        "rgba(232, 118, 107,1)",
+                        "rgba(70, 190, 138, 1)",
+                        "rgba(196, 121, 181, 1)"
+                    ],
+                    hoverBackgroundColor: [
+                        "rgba(71,173,185,1)",
+                        "rgba(232, 118, 107,1)",
+                        "rgba(70, 190, 138, 1)",
+                        "rgba(196, 121, 181, 1)"
+                    ]
+                }]
+        };
+
+        new Chart(doughnutCtx, {
+            type: 'doughnut',
+            data: chartDoughnut
+        });
+
+
+
+    });
+</script>
+<!-- END: page scripts -->
+<div class="cat__footer">
+    <div class="cat__footer__top">
+        <div class="row">
+            <div class="col-lg-6 mb-3">
+                <div class="mb-3">
+                    <strong>Curso - Gobierno Electrónico PUCP 2019-II</strong>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <ul class="list-unstyled mb-3">
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Grupo 3</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Profesores:</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Manuel Tupia</a></li>
+                            <li class="mb-2"><a target="_blank" href="javascript: void(0);">Fernando Huamán</a></li>    
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <a href="javascript: void(0);" class="cat__core__scroll-top" onclick="$('body, html').animate({'scrollTop': 0}, 500);"><i class="icmn-arrow-up"></i></a>
+</div>
+</div>
+</body>
+</html>
